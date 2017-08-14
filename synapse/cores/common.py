@@ -185,7 +185,7 @@ class Cortex(EventBus, DataModel, Runtime, s_ingest.IngestApi):
         confdefs = (
             ('autoadd', {'type': 'bool', 'asloc': 'autoadd', 'defval': 1,
                          'doc': 'Automatically add forms for props where type is form'}),
-            ('enforce', {'type': 'bool', 'asloc': 'enforce', 'defval': 0, 'doc': 'Enables data model enforcement'}),
+            ('enforce', {'type': 'bool', 'asloc': 'enforce', 'defval': 1, 'doc': 'Enables data model enforcement'}),
             ('caching', {'type': 'bool', 'asloc': 'caching', 'defval': 0,
                          'doc': 'Enables caching layer in the cortex'}),
             ('cache:maxsize', {'type': 'int', 'asloc': 'cache_maxsize', 'defval': 1000,
