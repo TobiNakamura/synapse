@@ -1636,7 +1636,7 @@ class Cortex(EventBus, DataModel, Runtime, s_ingest.IngestApi):
         Notes:
 
             If props contains a key "time" it will be used for
-            the cortex timestap column in the row storage.
+            the cortex timestamp column in the row storage.
 
         '''
         return self.addTufoEvents(form, (props,))[0]

@@ -67,13 +67,13 @@ class UserAuth(EventBus):
 
         self.core = core
 
-        self.core.addTufoForm('syn:auth:user')
+        self.core.addTufoForm('syn:auth:user', ptype='str:lwr')
         self.core.addTufoProp('syn:auth:user', 'apikey', defval='')
         self.core.addTufoProp('syn:auth:user', 'shadow:sha256', defval='')
 
-        self.core.addTufoForm('syn:auth:role')
+        self.core.addTufoForm('syn:auth:role', ptype='str:lwr')
 
-        self.core.addTufoForm('syn:auth:userrole')
+        self.core.addTufoForm('syn:auth:userrole', ptype='str:lwr')
         self.core.addTufoProp('syn:auth:userrole', 'user')
         self.core.addTufoProp('syn:auth:userrole', 'role')
 
