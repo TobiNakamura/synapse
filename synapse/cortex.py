@@ -101,7 +101,7 @@ def openurl(url, conf=None, storconf=None, **opts):
             parsed URL.
 
     Examples:
-        Open up  ram back cortex::
+        Open up a ram backed cortex::
 
             core = openurl('ram:///')
 
